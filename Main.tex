@@ -1,0 +1,188 @@
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\usepackage{hyperref}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.5cm,right=9cm,marginparwidth=6.9cm,marginparsep=1.0cm,top=1.15cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{gray}{0.005}
+\definecolor{LightGrey}{gray}{0.2}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Sarthak Jain}
+\tagline{Experiences in Industry Growth, Marketing and Teaching}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+% \photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  
+    \email{\color{blue} \href{mailto:sarthak.jain2404@gmail.com?Subject=Regarding Resume}{ \small sarthak.jain2404@gmail.com}}
+    \phone{\color{blue}\href{tel:+917011189445}{\small +91 7011189445}}
+%  \mailaddress{Address, Street, 00000 County}
+%    \location{\color{blue}\href{https://www.google.com/maps/place/Delhi%/}{\small New Delhi}}
+%  \homepage{marissamayr.tumblr.com/}
+  \twitter{\color{blue}\href{https://twitter.com/sarcastic_sark/}{\small {@sarcastic\_sark}}}
+    \linkedin{\color{blue}\href{https://www.linkedin.com/in/sarthak-jain24apr98/}{\small sarthak-jain24apr98}}
+    \github{\color{blue}\href{https://github.com/sarthak-1998}{\small sarthak-1998}} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[SideBar]{\Large Professional Experience}
+
+\cvevent{\color{blue}\href{https://codingblocks.com/team.html}{Tester and Company Growth Strategist}}{\color{blue}\href{https://codingblocks.com}{Coding Blocks}}{Nov2018-Ongoing}{Delhi, India}
+\begin{itemize}
+\item Spearheading the adoption of new methodology in Marketing to bring in real-time data monitoring, analytics,  trace-ability and achieve compliance. 
+\item Consistently tested CB Online App and made it 95\% crash free.
+\item Lead a team of 100 Campus Ambassadors present pan India in different Colleges and Universities to increase brand  awareness.
+\item Increased social media audience and engagement along with site SEO by multiple folds, furthermore managed online adverts.
+\item Organized events at colleges in collaboration with MNCs.
+
+
+\end{itemize}
+
+\cvevent{Web Developer Intern}{\color{blue}\href{https://allindiaradio.gov.in/}{All India Radio (AIR), Prasar Bharati}}{June2018-July2018 }{New Delhi, India}
+\begin{itemize}
+\item Maintained and Created a wonderful website to digitizes the Complaint filing System for the Government quarter residents. 
+\item Constantly updated and Monitored the company’s Database.
+
+\end{itemize}
+
+
+\cvevent{Social Media Manager}{\color{blue}\href{https://www.shopnani.com/}{ ShopNani }}{Dec2016-Jan2017 }{New Delhi, India}
+
+\begin{itemize}
+\item Wrote niche articles on latest prevailing Tech news for the website, Blog and social media accounts for daily postings.
+Evaluated different insights and Demographics. Handled the company’s online presence.
+ \item Monitored ongoing marketing campaigns
+Increased social media following and clicks by 200\%
+
+\end{itemize}
+
+
+\cvsection{\Large  Projects}
+\cvproject{\color{blue}\href{https://sarthakj.me}{Website sarthakj.me - \color{black}Node.js}}
+\begin{itemize}
+\item My Website hosted on AWS.
+\end{itemize}
+
+\cvproject{\color{blue}\href{https://github.com/sarthak-1998/Rap-Generator}{Lyrics Generator - \color{black}Python}}
+\begin{itemize}
+\item A Markov Chain based model to generate lyrics of a song. 
+\end{itemize}
+
+%\cvproject{\color{blue}\href{https://github.com/sarthak-1998/Parking%-Lot-Problem}{Parking Lot App - \color{black}Ruby}}
+%\begin{itemize}
+%\item Parking lot terminal based application for effective parking %solutions.
+%\end{itemize}
+
+\cvproject{\color{blue}\href{https://github.com/sarthak-1998/codingblocks.com}{Coding Blocks Website - \color{black}VanillaJS}}
+\begin{itemize}
+\item The Coding Blocks main website.
+\end{itemize}
+
+%\cvproject{\color{blue}\href{https://github.com/sarthak-1998/shortlr2-backend}{Short Link Generator - \color{black}Node.js}}
+%\begin{itemize}
+%\item Short link generator with additional features such as use UTM tracking.
+%\end{itemize}
+
+%\cvproject{\color{blue}\href{https://github.com/sarthak-1998/LIVE-Code-Share}{Live Code Share - \color{black}Node.js}}
+%\begin{itemize}
+%\item Web app to support Live Code sharing \& chatting feature.
+%\end{itemize}
+
+
+\cvproject{\color{blue}\href{https://github.com/sarthak-1998/RWA-WebApp-AIR}{Web App for AIR - \color{black}C\# and ASP.Net}}
+\begin{itemize}
+\item This is the logistic application developed to digitize the manual filing of complaints and their status tracking for Government quarters.
+\end{itemize}
+
+
+\cvsection{\Large Education}
+\cvevent{\small{B.Tech - Computer Science }}
+{\small{Maharaja Agrasen Institute of Technology}}
+{ Jun 2016 -- May 2020 \hspace{1cm} CGPA: 7.26 }{}
+\cvevent{\small{Senior Secondary Education- 12th (CBSE)}}{\small{Kendriya Vidyalaya sector-8 Rohini, Delhi}}{2016 \hspace{1cm} Percentage: 90.2}{} 
+\cvevent{\small{Secondary Education-10th (CBSE)}}{\small{Kendriya Vidyalaya sector-8 Rohini, Delhi}}{
+2014 \hspace{1cm} CGPA: 10}{}
+
+
+
+
+
+
+
+%\cvsection{\Large Personal Skills}
+
+%\cvtag {Creative spirit}
+%\cvtag{Reliable and professional}
+%\cvtag{Organized} \newline
+%\cvtag{Punctual}
+%\cvtag{Team player}
+%\cvtag{Fast learner}
+%\cvtag{Motivated} 
+
+%\cvskill {fqfmf}{3} 
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
