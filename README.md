@@ -1,4 +1,4 @@
-# AltaCV, yet another LaTeX CV/Résumé class
+# Non - Technical Resume -  [`resume`](http://www.cb.lk/sarthak/nt)
 
 ![Alt text](assets/Sarthak_CV_img.jpg?raw=true "Title")
 ## Samples
