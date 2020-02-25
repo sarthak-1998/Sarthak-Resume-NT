@@ -1,9 +1,6 @@
 # Non - Technical Resume -  [`resume`](http://www.cb.lk/sarthak/nt)
 
-![Alt text](assets/Sarthak_CV_img.jpg?raw=true "Title")
-## Samples
-
-This is how the re-created résumé looks like ([view/open on Overleaf](https://www.overleaf.com/latex/examples/recreating-business-insiders-cv-of-marissa-mayer-using-altacv/gtqfpbwncfvp)):
+![Alt text](assets/Sarthak_CV_img.jpg?raw=true "Title"):
 
 
 ## Requirements and Compilation
